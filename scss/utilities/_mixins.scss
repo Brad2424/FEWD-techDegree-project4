@@ -1,0 +1,26 @@
+
+//media queries
+
+//flexbox settings
+@mixin flex-container {
+    display: flex;
+}
+
+@mixin flex-item {
+    flex: 1;
+}
+
+//element and modifier BEM selectors
+@mixin button {
+    border-radius: 2px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@mixin center {
+    text-align: center;
+    margin: 0 auto;
+}

@@ -1,0 +1,17 @@
+// Navigation:
+// .nav__item
+
+.nav__item {
+    @include center;
+    @include button;
+}
+
+a {
+    @include button;
+    color: $primary-color;
+    text-transform: none;
+}
+
+.grid__col--3 {
+    @include center;
+}

@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  width: 90%;
+  margin: 20px auto; }
+
+ul {
+  list-style-type: none;
+  padding: 0px; }
+
+p {
+  color: #646464; }
+
+.nav__item {
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 2px;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 0; }
+
+a {
+  border-radius: 2px;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 0;
+  color: #646464;
+  text-transform: none; }
+
+.grid__col--3 {
+  text-align: center;
+  margin: 0 auto; }
+
+/*# sourceMappingURL=style.css.map */
