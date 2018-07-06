@@ -1,20 +1,13 @@
-//unniversal selector
+//suggested elements
 * {
     box-sizing: border-box;
 }
 
-body {
-    width: 90%;
-    margin: 20px auto;
-}
-
-//ul elements
 ul {
     list-style-type: none;
     padding: 0px;
 }
 
-//p elements
 p {
     color: $primary-color;
 }

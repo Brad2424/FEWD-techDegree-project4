@@ -16,3 +16,24 @@
 
 //flexbox
 
+.container {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.grid__row {
+    border: solid 2px red;
+}
+
+.grid__col--3,
+.grid__col--4,
+.grid__col--5,
+.grid__col--6,
+.grid__col--7,
+.grid__col--8,
+.grid__col--9,
+.grid__col--10,
+.grid__col--11,
+.grid__col--12 {
+    border: solid 2px blue;
+}

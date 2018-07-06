@@ -1,7 +1,33 @@
-// Typography:
-// .container
-// .link
-// .blockquote
-// .headline--primary
-// .headline--secondary
 
+.container {
+    font-family: $font-stack;
+}
+
+.headline--secondary {
+    color: $primary-color;
+    font-weight: 200;
+    padding-left: 10px;
+
+}
+
+.headline--primary  {
+    color: $secondary-color;
+    padding-left: 20px;
+    margin-bottom: 40px;
+    font-weight: 900;
+}
+
+.link {
+    color: $secondary-color;
+    font-weight: bold;
+}
+
+.blockquote {
+    font-style: italic;
+    font-size: 1.4rem;
+    color: $primary-color;
+    border-radius: $round-border;
+    border-left: 8px solid $secondary-color;
+    padding-left: 20px;
+    margin: 40px 20px;
+}

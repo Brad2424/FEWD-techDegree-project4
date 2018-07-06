@@ -1,10 +1,13 @@
 //fonts
-$font-stack: sans-serif;
+$font-stack: 'Source Sans Pro', sans-serif;
 
 //breakpoints
 $breakpoint-sm: 480px;
 $breakpoint-lg: 1400px;
 
 //colours
-$primary-color: rgb(100, 100, 100);
+$primary-color: rgb(121, 121, 121);
 $secondary-color: rgb(4, 205, 255);
+
+//border rounding
+$round-border: 5px;

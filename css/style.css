@@ -1,16 +1,58 @@
 * {
   box-sizing: border-box; }
 
-body {
-  width: 90%;
-  margin: 20px auto; }
-
 ul {
   list-style-type: none;
   padding: 0px; }
 
 p {
-  color: #646464; }
+  color: #797979; }
+
+.container {
+  width: 90%;
+  margin: 20px auto; }
+
+.grid__row {
+  border: solid 2px red; }
+
+.grid__col--3,
+.grid__col--4,
+.grid__col--5,
+.grid__col--6,
+.grid__col--7,
+.grid__col--8,
+.grid__col--9,
+.grid__col--10,
+.grid__col--11,
+.grid__col--12 {
+  border: solid 2px blue; }
+
+.container {
+  font-family: "Source Sans Pro", sans-serif; }
+
+.headline--secondary {
+  color: #797979;
+  font-weight: 200;
+  padding-left: 10px; }
+
+.headline--primary {
+  color: #04cdff;
+  padding-left: 20px;
+  margin-bottom: 40px;
+  font-weight: 900; }
+
+.link {
+  color: #04cdff;
+  font-weight: bold; }
+
+.blockquote {
+  font-style: italic;
+  font-size: 1.4rem;
+  color: #797979;
+  border-radius: 5px;
+  border-left: 8px solid #04cdff;
+  padding-left: 20px;
+  margin: 40px 20px; }
 
 .nav__item {
   text-align: center;
@@ -29,11 +71,14 @@ a {
   text-decoration: none;
   text-align: center;
   padding: 10px 0;
-  color: #646464;
+  color: #797979;
   text-transform: none; }
 
 .grid__col--3 {
   text-align: center;
+  margin: 0 auto; }
+
+.img--avatar {
   margin: 0 auto; }
 
 /*# sourceMappingURL=style.css.map */
