@@ -1,29 +1,27 @@
-//     .container
-//     .grid__row
-//     .grid__col--2
-//     .grid__col--3
-//     .grid__col--4
-//     .grid__col--5
-//     .grid__col--6
-//     .grid__col--7
-//     .grid__col--8
-//     .grid__col--9
-//     .grid__col--10
-//     .grid__col--11
-//     .grid__col--12
-//     .centered
-//     .theme__colors
-
-//flexbox
-
 .container {
-    width: 90%;
+    width: 80%;
     margin: 20px auto;
 }
 
+//flexbox
 .grid__row {
-    border: solid 2px red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.theme__colors {
+    background-color: $grid-color;
+}
+
+.grid__row {
+    width: 100%
+}
+
+//     .centered
+// .grid__col--9,
+// .grid__col--10,
+// .grid__col--11 
 
 .grid__col--3,
 .grid__col--4,
@@ -31,9 +29,6 @@
 .grid__col--6,
 .grid__col--7,
 .grid__col--8,
-.grid__col--9,
-.grid__col--10,
-.grid__col--11,
 .grid__col--12 {
-    border: solid 2px blue;
+    align-self: flex-start;
 }

@@ -1,7 +1,32 @@
-// Buttons:
-// .btn--default
-// .btn--success
-// .btn--error
-// .btn--warning
-// .btn--info
+
 // .theme__colors
+
+.btn--default {
+    @include button;
+}
+
+.btn--success {
+    @include button;
+    background-color: adjust-hue($secondary-color, -55);
+    border-color: adjust-hue($secondary-color, -55);
+}
+
+.btn--error {
+    @include button;
+    background-color: adjust-hue($secondary-color, 170);
+    border-color: adjust-hue($secondary-color, 170);
+}
+
+.btn--warning {
+    @include button;
+    background-color: adjust-hue($secondary-color, -145);
+    border-color: adjust-hue($secondary-color, -145);
+}
+
+.btn--info {
+    @include button;
+    background-color: adjust-hue($secondary-color, 80);
+    border-color: adjust-hue($secondary-color, 80);
+}
+
+

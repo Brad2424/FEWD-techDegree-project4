@@ -7,14 +7,15 @@
     color: $primary-color;
     font-weight: 200;
     padding-left: 10px;
-
+    margin-bottom: 20px;
+    text-align: left;
 }
 
 .headline--primary  {
-    color: $secondary-color;
-    padding-left: 20px;
+    color: $tertiary-color;
     margin-bottom: 40px;
     font-weight: 900;
+    width: 90%;
 }
 
 .link {
@@ -26,8 +27,8 @@
     font-style: italic;
     font-size: 1.4rem;
     color: $primary-color;
-    border-radius: $round-border;
-    border-left: 8px solid $secondary-color;
+    border-radius: $rounded;
+    border-left: 8px solid $tertiary-color;
     padding-left: 20px;
     margin: 40px 20px;
 }

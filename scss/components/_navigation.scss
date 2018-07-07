@@ -1,17 +1,15 @@
-// Navigation:
-// .nav__item
 
 .nav__item {
-    @include center;
-    @include button;
+    border-radius: $rounded;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
 }
 
 a {
-    @include button;
     color: $primary-color;
-    text-transform: none;
+    text-decoration: none;
 }
 
-.grid__col--3 {
-    @include center;
-}
+// .grid__col--3
+

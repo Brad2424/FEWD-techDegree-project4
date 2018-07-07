@@ -1,5 +1,18 @@
-// Forms:
-// .form
-// .form__label--hidden
-// .form__input
 
+.form__label--hidden {
+    display: none;
+}
+
+.form__input {
+    width: 95%;
+    font-weight: bold;
+    font-size: 0.8rem;
+    border: none;
+    border-bottom: 5px solid $tertiary-color;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.form {
+    text-align: center;
+}

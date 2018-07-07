@@ -1,9 +1,13 @@
-// Image:
+
 // .img--logo
-// .img--frame
-// .img--avatar
 
 
 .img--avatar {
-    margin: 0 auto;
+    width: 150px;
+}
+
+.img--frame {
+    max-width: 100%;
+    padding: 10px;
+    border: 0.1px solid $primary-color;
 }
