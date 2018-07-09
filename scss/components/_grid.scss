@@ -1,22 +1,21 @@
 .container {
     width: 80%;
     margin: 20px auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
 }
 
 //flexbox
 .grid__row {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
     margin-bottom: 20px;
+        @include mq() {
+            flex-direction: row;
+        }
 }
 
 //     .centered
 
+.grid__col--2,
 .grid__col--3,
 .grid__col--4,
 .grid__col--5,
@@ -27,10 +26,7 @@
 .grid__col--10,
 .grid__col--11,
 .grid__col--12 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: space-evenly;
+    flex-grow: 1;
 }
 
 // grid items

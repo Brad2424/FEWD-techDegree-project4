@@ -1,6 +1,3 @@
-@media (min-width: 1400px) {
-  .grid__row {
-    flex-direction: row; } }
 .btn--default, .btn--success, .btn--error, .btn--warning, .btn--info {
   border-radius: 5px;
   border: 1px solid #51ddfc;
@@ -11,6 +8,7 @@
   padding: 10px 0;
   background-color: #51ddfc;
   width: 95%;
+  display: block;
   line-height: 0.8;
   margin-top: 10px;
   font-size: 0.9rem;
@@ -21,9 +19,7 @@
 .theme__colors.grid__col--12, .theme__colors.grid__col--6, .theme__colors.grid__col--4, .theme__colors.grid__col--3, .theme__colors.grid__col--5, .theme__colors.grid__col--7, .theme__colors.grid__col--8 {
   border-radius: 5px;
   padding: 10px;
-  margin-top: 10px;
-  margin-left: auto;
-  margin-right: auto; }
+  margin-top: 10px; }
 
 * {
   box-sizing: border-box; }
@@ -38,18 +34,17 @@ p {
 
 .container {
   width: 80%;
-  margin: 20px auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly; }
+  margin: 20px auto; }
 
 .grid__row {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
   margin-bottom: 20px; }
+  @media (min-width: 1400px) {
+    .grid__row {
+      flex-direction: row; } }
 
+.grid__col--2,
 .grid__col--3,
 .grid__col--4,
 .grid__col--5,
@@ -60,10 +55,7 @@ p {
 .grid__col--10,
 .grid__col--11,
 .grid__col--12 {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  justify-content: space-evenly; }
+  flex-grow: 1; }
 
 .theme__colors.grid__col--12 {
   background-color: #7ee6fd;
@@ -128,6 +120,11 @@ p {
   padding: 10px 0;
   width: 100%;
   text-align: center; }
+  @media (min-width: 1400px) {
+    .nav__item {
+      display: inline-block;
+      width: fit-content;
+      margin: 0 10px; } }
 
 a {
   color: #aaaaaa;
@@ -146,6 +143,7 @@ a {
 .img--frame {
   max-width: 410px;
   max-height: 200px;
+  max-width: 100%;
   padding: 10px;
   border: 0.1px solid #aaaaaa; }
 

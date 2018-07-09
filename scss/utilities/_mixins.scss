@@ -1,8 +1,9 @@
 
 //media queries
-@media (min-width: $breakpoint-lg) {
-    .grid__row {
-        flex-direction: row;
+
+@mixin mq() {
+    @media (min-width: $breakpoint-lg) {
+        @content;
     }
 }
 
