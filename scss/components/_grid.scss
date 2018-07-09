@@ -37,9 +37,6 @@
     @include mq() {
         display: flex;
         flex-grow: 2;
-            .card {
-                width: 100%;
-            }
     }
 }
 
