@@ -28,11 +28,20 @@
 .grid__col--11,
 .grid__col--12 {
     flex-grow: 1;
+        @include mq() {
+            display: flex;
+        }
 }
 
 .grid__col--8 {
     @include mq() {
         flex-grow: 2;
+    }
+}
+
+.grid__col--7 {
+    @include mq() {
+        flex-grow: 1.5;
     }
 }
 
