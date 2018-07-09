@@ -1,6 +1,9 @@
 .container {
     width: 80%;
     margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 //flexbox
@@ -8,20 +11,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
 }
 
 .theme__colors {
-    background-color: $grid-color;
+    @include button;
+    text-align: left;
 }
-
-.grid__row {
-    width: 100%
-}
-
-//     .centered
-// .grid__col--9,
-// .grid__col--10,
-// .grid__col--11 
 
 .grid__col--3,
 .grid__col--4,
@@ -29,6 +26,46 @@
 .grid__col--6,
 .grid__col--7,
 .grid__col--8,
+.grid__col--9,
+.grid__col--10,
+.grid__col--11,
 .grid__col--12 {
-    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    text-align: left;
+    justify-content: space-evenly;
 }
+
+// grid items
+.theme__colors.grid__col--12 {
+    background-color: rgb(126, 230, 253);
+    border-color: rgb(126, 230, 253);
+}
+.theme__colors.grid__col--6 {
+    background-color: rgb(63, 171, 232);
+    border-color: rgb(63, 171, 232);
+}
+.theme__colors.grid__col--4 {
+    background-color: rgb(136, 230, 253);
+    border-color: rgb(136, 230, 253);
+}
+.theme__colors.grid__col--3 {
+    background-color: rgb(222, 178, 238);
+    border-color: rgb(222, 178, 238);
+}
+.theme__colors.grid__col--5 {
+    background-color: rgb(136, 212, 160);
+    border-color: rgb(136, 212, 160);
+}
+.theme__colors.grid__col--7 {
+    background-color: rgb(236, 159, 163);
+    border-color: rgb(236, 159, 163);
+}
+.theme__colors.grid__col--8 {
+    background-color: rgb(253, 159, 133);
+    border-color: rgb(253, 159, 133);
+}
+
+//     .centered
