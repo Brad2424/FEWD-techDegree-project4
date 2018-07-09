@@ -2,6 +2,12 @@
     font-family: $font-stack;
 }
 
+.grid__col--8 {
+    .card {
+        width: 66.6%;
+    }
+ }
+
 .headline--secondary {
     color: $primary-color;
     font-weight: 200;
