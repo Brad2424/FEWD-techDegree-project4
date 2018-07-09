@@ -15,10 +15,7 @@
     margin-bottom: 20px;
 }
 
-.theme__colors {
-    @include button;
-    text-align: left;
-}
+//     .centered
 
 .grid__col--3,
 .grid__col--4,
@@ -33,39 +30,42 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    align-items: center;
-    text-align: left;
     justify-content: space-evenly;
 }
 
 // grid items
 .theme__colors.grid__col--12 {
+    @extend %grid-col;
     background-color: rgb(126, 230, 253);
     border-color: rgb(126, 230, 253);
 }
 .theme__colors.grid__col--6 {
+    @extend %grid-col;
     background-color: rgb(63, 171, 232);
     border-color: rgb(63, 171, 232);
 }
 .theme__colors.grid__col--4 {
+    @extend %grid-col;
     background-color: rgb(136, 230, 253);
     border-color: rgb(136, 230, 253);
 }
 .theme__colors.grid__col--3 {
+    @extend %grid-col;
     background-color: rgb(222, 178, 238);
     border-color: rgb(222, 178, 238);
 }
 .theme__colors.grid__col--5 {
+    @extend %grid-col;
     background-color: rgb(136, 212, 160);
     border-color: rgb(136, 212, 160);
 }
 .theme__colors.grid__col--7 {
+    @extend %grid-col;
     background-color: rgb(236, 159, 163);
     border-color: rgb(236, 159, 163);
 }
 .theme__colors.grid__col--8 {
+    @extend %grid-col;
     background-color: rgb(253, 159, 133);
     border-color: rgb(253, 159, 133);
 }
-
-//     .centered

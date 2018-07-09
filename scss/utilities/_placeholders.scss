@@ -6,3 +6,30 @@
 //Headlines
 
 //Nav items
+
+//Button
+%btn {
+    border-radius: $rounded;
+    border: 1px solid $secondary-color;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 0;
+    background-color: $secondary-color;
+    width: 95%;
+    line-height: 0.8;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+%grid-col {
+    border-radius: $rounded;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}

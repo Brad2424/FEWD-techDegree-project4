@@ -1,31 +1,9 @@
 
 //media queries
+@media (min-width: $breakpoint-lg) {
+    .grid__row {
+        flex-direction: row;
+    }
+}
 
 //flexbox settings
-@mixin flex-container {
-    display: flex;
-}
-
-@mixin flex-item {
-    flex: 1;
-}
-
-//element and modifier BEM selectors
-@mixin button {
-    border-radius: $rounded;
-    border: 1px solid $secondary-color;
-    color: white;
-    font-weight: 600;
-    text-decoration: none;
-    text-align: center;
-    padding: 10px 0;
-    background-color: $secondary-color;
-    width: 95%;
-    line-height: 0.8;
-    margin-top: 10px;
-    font-size: 0.9rem;
-}
-
-@mixin grid-col-section {
-    border-radius: $rounded;
-}

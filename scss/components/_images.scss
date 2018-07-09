@@ -1,13 +1,19 @@
 
-// .img--logo
+.img--logo {
+    display: block;
+    margin: 0 auto;
+}
 
 .img--avatar {
     max-width: 150px;
     max-height: 150px;
+    display: block;
+    margin: 20px auto 0 auto;
 }
 
 .img--frame {
-    max-width: 100%;
+    max-width: 410px;
+    max-height: 200px;
     padding: 10px;
     border: 0.1px solid $primary-color;
 }
