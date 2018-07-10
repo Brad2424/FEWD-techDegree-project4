@@ -17,8 +17,10 @@ a {
 }
 
 .grid__col--3 {
-    .img--logo {
-        margin-left: 30px;
+    @include mq() {
+        .img--logo {
+            margin-left: 30px;
+        }
     }
 }
 

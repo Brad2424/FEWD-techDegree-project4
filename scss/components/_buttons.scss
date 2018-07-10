@@ -28,9 +28,3 @@
     background-color: adjust-hue($secondary-color, 80);
     border-color: adjust-hue($secondary-color, 80);
 }
-
-.grid__col--4 {
-    .btn--default {
-        width: 100%;
-    }
-}

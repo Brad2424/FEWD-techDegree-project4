@@ -3,18 +3,27 @@
     margin: 20px auto;
 }
 
-//flexbox
+//--------flexbox container--------//
 .grid__row {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+@include flex;
     margin-bottom: 20px;
         @include mq() {
             flex-direction: row;
         }
 }
 
-//     .centered
+@for $i from 1 through $g-col-count {
+    .grid__col--#{$i}.theme__colors{
+        @extend %grid-col;
+     }
+}
+
+.grid__col--7.centered {
+    @include mq() {
+        max-width: 60%;
+        margin: 0 auto;
+    }
+}
 
 .grid__col--2,
 .grid__col--3,
@@ -28,58 +37,68 @@
 .grid__col--11,
 .grid__col--12 {
     flex: 1;
-        @include mq() {
-            display: flex;
-            justify-content: space-between;
-        }
 }
 
-.grid__col--8 {
+//nav bar//
+.grid__col--9 {
     @include mq() {
         display: flex;
+    }
+}
+
+//button section//
+.grid__col--12 {
+    @include mq() {
+        display: flex;
+    }
+}
+
+.grid__col--12.theme__colors {
+    @include mq() {
+        display: block;
+    }
+}
+
+//typography section//
+.grid__col--8 {
+    @include mq() {
         flex: 2;
     }
 }
 
+//grid-flex in grid section
 .grid__col--7 {
     @include mq() {
         flex: 1.5;
     }
 }
 
-// grid items
+// grid item colors //
 .theme__colors.grid__col--12 {
-    @extend %grid-col;
     background-color: rgb(126, 230, 253);
     border-color: rgb(126, 230, 253);
 }
 .theme__colors.grid__col--6 {
-    @extend %grid-col;
     background-color: rgb(63, 171, 232);
     border-color: rgb(63, 171, 232);
 }
 .theme__colors.grid__col--4 {
-    @extend %grid-col;
     background-color: rgb(136, 230, 253);
     border-color: rgb(136, 230, 253);
 }
 .theme__colors.grid__col--3 {
-    @extend %grid-col;
     background-color: rgb(222, 178, 238);
     border-color: rgb(222, 178, 238);
 }
 .theme__colors.grid__col--5 {
-    @extend %grid-col;
     background-color: rgb(136, 212, 160);
     border-color: rgb(136, 212, 160);
 }
 .theme__colors.grid__col--7 {
-    @extend %grid-col;
     background-color: rgb(236, 159, 163);
     border-color: rgb(236, 159, 163);
 }
 .theme__colors.grid__col--8 {
-    @extend %grid-col;
     background-color: rgb(253, 159, 133);
     border-color: rgb(253, 159, 133);
 }

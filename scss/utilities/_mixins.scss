@@ -1,6 +1,5 @@
 
 //media queries
-
 @mixin mq() {
     @media (min-width: $breakpoint-lg) {
         @content;
@@ -8,3 +7,9 @@
 }
 
 //flexbox settings
+@mixin flex() {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+        @content;
+}
