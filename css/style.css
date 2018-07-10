@@ -5,7 +5,7 @@
   font-weight: 600;
   text-decoration: none;
   text-align: center;
-  padding: 10px 0;
+  padding: 10px 20px;
   background-color: #51ddfc;
   width: 95%;
   display: block;
@@ -15,6 +15,10 @@
   text-transform: uppercase;
   margin-left: auto;
   margin-right: auto; }
+  @media (min-width: 1400px) {
+    .btn--default, .btn--success, .btn--error, .btn--warning, .btn--info {
+      width: auto;
+      padding: 10px 50px; } }
 
 .theme__colors.grid__col--12, .theme__colors.grid__col--6, .theme__colors.grid__col--4, .theme__colors.grid__col--3, .theme__colors.grid__col--5, .theme__colors.grid__col--7, .theme__colors.grid__col--8 {
   border-radius: 5px;
@@ -56,7 +60,7 @@ p {
 .grid__col--10,
 .grid__col--11,
 .grid__col--12 {
-  flex-grow: 1; }
+  flex: 1; }
   @media (min-width: 1400px) {
     .grid__col--2,
     .grid__col--3,
@@ -69,16 +73,17 @@ p {
     .grid__col--10,
     .grid__col--11,
     .grid__col--12 {
-      display: flex; } }
+      display: flex;
+      justify-content: space-between; } }
 
 @media (min-width: 1400px) {
   .grid__col--8 {
     display: flex;
-    flex-grow: 2; } }
+    flex: 2; } }
 
 @media (min-width: 1400px) {
   .grid__col--7 {
-    flex-grow: 1.5; } }
+    flex: 1.5; } }
 
 .theme__colors.grid__col--12 {
   background-color: #7ee6fd;
@@ -111,14 +116,11 @@ p {
 .container {
   font-family: "Source Sans Pro", sans-serif; }
 
-.grid__col--8 .card {
-  width: 100%; }
-
 .headline--secondary {
   color: #aaaaaa;
   font-weight: 200;
   padding-left: 10px;
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
   text-align: left; }
 
 .headline--primary {
@@ -156,6 +158,9 @@ a {
   color: #aaaaaa;
   text-decoration: none; }
 
+.grid__col--3 .img--logo {
+  margin-left: 30px; }
+
 .img--logo {
   display: block;
   margin: 0 auto; }
@@ -171,7 +176,8 @@ a {
   max-height: 200px;
   max-width: 100%;
   padding: 10px;
-  border: 0.1px solid #aaaaaa; }
+  border: 0.1px solid #aaaaaa;
+  margin: 0 auto; }
 
 .btn--success {
   background-color: #51fc7e;
@@ -189,11 +195,14 @@ a {
   background-color: #a951fc;
   border-color: #a951fc; }
 
+.grid__col--4 .btn--default {
+  width: 100%; }
+
 .form__label--hidden {
   display: none; }
 
 .form__input {
-  width: 95%;
+  width: 90%;
   font-weight: bold;
   font-size: 0.8rem;
   border: none;
