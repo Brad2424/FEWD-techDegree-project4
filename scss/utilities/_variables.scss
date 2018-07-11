@@ -14,3 +14,11 @@ $tertiary-color: rgb(88, 225, 193);
 
 //grid-col count
 $g-col-count: 12;
+
+//button colors
+$btn-color: (
+    'success': adjust-hue($secondary-color, -55),
+    'error': adjust-hue($secondary-color, 170),
+    'warning': adjust-hue($secondary-color, -145),
+    'info': adjust-hue($secondary-color, 80),
+)

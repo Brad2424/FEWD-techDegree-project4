@@ -1,30 +1,40 @@
 
 // .theme__colors
 
+// @each $btn-type, $color in $btn-color {
+//     .btn--#{$btn-type} {
+//         background-color: $color;
+//     }
+// }
+
+.btn {
+    @include thems($btn-color);
+}
+
 .btn--default {
     @extend %btn;
 }
 
 .btn--success {
     @extend %btn;
-    background-color: adjust-hue($secondary-color, -55);
+    // background-color: adjust-hue($secondary-color, -55);
     border-color: adjust-hue($secondary-color, -55);
 }
 
 .btn--error {
     @extend %btn;
-    background-color: adjust-hue($secondary-color, 170);
+    // background-color: adjust-hue($secondary-color, 170);
     border-color: adjust-hue($secondary-color, 170);
 }
 
 .btn--warning {
     @extend %btn;
-    background-color: adjust-hue($secondary-color, -145);
+    // background-color: adjust-hue($secondary-color, -145);
     border-color: adjust-hue($secondary-color, -145);
 }
 
 .btn--info {
     @extend %btn;
-    background-color: adjust-hue($secondary-color, 80);
+    // background-color: adjust-hue($secondary-color, 80);
     border-color: adjust-hue($secondary-color, 80);
 }

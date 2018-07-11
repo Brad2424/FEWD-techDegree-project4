@@ -1,221 +1,94 @@
-.btn--default, .btn--success, .btn--error, .btn--warning, .btn--info {
-  border-radius: 5px;
-  border: 1px solid #51ddfc;
-  color: white;
-  font-weight: 600;
-  text-decoration: none;
-  text-align: center;
-  padding: 10px 20px;
-  background-color: #51ddfc;
-  width: 95%;
-  display: block;
-  line-height: 0.8;
-  margin-top: 10px;
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  margin-left: auto;
-  margin-right: auto; }
-  @media (min-width: 1400px) {
-    .btn--default, .btn--success, .btn--error, .btn--warning, .btn--info {
-      width: auto;
-      padding: 10px 50px; } }
+/*
+Error: Required argument $just must come before any optional arguments.
+        on line 20 of scss/utilities/_mixins.scss
+        from line 3 of scss/utilities/_index.scss
+        from line 2 of scss/style.scss
 
-.grid__col--1.theme__colors, .grid__col--2.theme__colors, .grid__col--3.theme__colors, .grid__col--4.theme__colors, .grid__col--5.theme__colors, .grid__col--6.theme__colors, .grid__col--7.theme__colors, .grid__col--8.theme__colors, .grid__col--9.theme__colors, .grid__col--10.theme__colors, .grid__col--11.theme__colors, .grid__col--12.theme__colors {
-  border-radius: 5px;
-  padding: 10px;
-  margin: 10px 5px 0px 5px; }
-  @media (min-width: 1400px) {
-    .grid__col--1.theme__colors, .grid__col--2.theme__colors, .grid__col--3.theme__colors, .grid__col--4.theme__colors, .grid__col--5.theme__colors, .grid__col--6.theme__colors, .grid__col--7.theme__colors, .grid__col--8.theme__colors, .grid__col--9.theme__colors, .grid__col--10.theme__colors, .grid__col--11.theme__colors, .grid__col--12.theme__colors {
-      text-align: center; } }
+15: 
+16: //flexbox settings
+17: 
+18: @mixin flexy($disp: flex,
+19:             $dir: column,
+20:             $just) {
+21:     display: $disp;
+22:     flex-direction: $dir;
+23:     justify-content: $just;
+24:         @content;
+25: }
 
-* {
-  box-sizing: border-box; }
-
-ul {
-  list-style-type: none;
-  padding: 0px;
-  text-align: center; }
-
-p {
-  color: #aaaaaa; }
-
-.container {
-  width: 80%;
-  margin: 20px auto; }
-
-.grid__row {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-bottom: 20px; }
-  @media (min-width: 1400px) {
-    .grid__row {
-      flex-direction: row; } }
-
-@media (min-width: 1400px) {
-  .grid__col--7.centered {
-    max-width: 60%;
-    margin: 0 auto; } }
-
-.grid__col--2,
-.grid__col--3,
-.grid__col--4,
-.grid__col--5,
-.grid__col--6,
-.grid__col--7,
-.grid__col--8,
-.grid__col--9,
-.grid__col--10,
-.grid__col--11,
-.grid__col--12 {
-  flex: 1; }
-
-@media (min-width: 1400px) {
-  .grid__col--9 {
-    display: flex; } }
-
-@media (min-width: 1400px) {
-  .grid__col--12 {
-    display: flex; } }
-
-@media (min-width: 1400px) {
-  .grid__col--12.theme__colors {
-    display: block; } }
-
-@media (min-width: 1400px) {
-  .grid__col--8 {
-    flex: 2; } }
-
-@media (min-width: 1400px) {
-  .grid__col--7 {
-    flex: 1.5; } }
-
-.theme__colors.grid__col--12 {
-  background-color: #7ee6fd;
-  border-color: #7ee6fd; }
-
-.theme__colors.grid__col--6 {
-  background-color: #3fabe8;
-  border-color: #3fabe8; }
-
-.theme__colors.grid__col--4 {
-  background-color: #88e6fd;
-  border-color: #88e6fd; }
-
-.theme__colors.grid__col--3 {
-  background-color: #deb2ee;
-  border-color: #deb2ee; }
-
-.theme__colors.grid__col--5 {
-  background-color: #88d4a0;
-  border-color: #88d4a0; }
-
-.theme__colors.grid__col--7 {
-  background-color: #ec9fa3;
-  border-color: #ec9fa3; }
-
-.theme__colors.grid__col--8 {
-  background-color: #fd9f85;
-  border-color: #fd9f85; }
-
-.container {
-  font-family: "Source Sans Pro", sans-serif; }
-
-.headline--secondary {
-  color: #aaaaaa;
-  font-weight: 200;
-  padding-left: 10px;
-  margin: 0 0 20px 0;
-  text-align: left; }
-
-.headline--primary {
-  color: #58e1c1;
-  margin-bottom: 40px;
-  margin-left: 20px;
-  font-weight: 900;
-  width: 90%; }
-
-.link {
-  color: #51ddfc;
-  font-weight: bold; }
-
-.blockquote {
-  font-style: italic;
-  font-size: 1.4rem;
-  color: #aaaaaa;
-  border-radius: 5px;
-  border-left: 8px solid #58e1c1;
-  padding-left: 20px;
-  margin: 40px 20px; }
-
-.nav__item {
-  border-radius: 5px;
-  padding: 10px 0;
-  width: 100%;
-  text-align: center; }
-  @media (min-width: 1400px) {
-    .nav__item {
-      display: inline-block;
-      width: fit-content;
-      margin: 0 10px; } }
-
-a {
-  color: #aaaaaa;
-  text-decoration: none; }
-
-@media (min-width: 1400px) {
-  .grid__col--3 .img--logo {
-    margin-left: 30px; } }
-
-.img--logo {
-  display: block;
-  margin: 0 auto; }
-
-.img--avatar {
-  width: 150px;
-  height: 150px;
-  display: block;
-  margin: 20px auto 0 auto; }
-
-.img--frame {
-  display: block;
-  max-width: 410px;
-  max-height: 200px;
-  max-width: 100%;
-  padding: 10px;
-  border: 0.1px solid #aaaaaa;
-  margin: 0 auto; }
-
-.btn--success {
-  background-color: #51fc7e;
-  border-color: #51fc7e; }
-
-.btn--error {
-  background-color: #fc5451;
-  border-color: #fc5451; }
-
-.btn--warning {
-  background-color: #fcd451;
-  border-color: #fcd451; }
-
-.btn--info {
-  background-color: #a951fc;
-  border-color: #a951fc; }
-
-.form__label--hidden {
-  display: none; }
-
-.form__input {
-  width: 90%;
-  font-weight: bold;
-  font-size: 0.8rem;
-  border: none;
-  border-bottom: 5px solid #58e1c1;
-  padding: 10px;
-  margin-top: 20px; }
-
-.form {
-  text-align: center;
-  width: 100%; }
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+scss/utilities/_mixins.scss:20
+scss/utilities/_index.scss:3
+scss/style.scss:2
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/script/parser.rb:547:in `block in defn_arglist!'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/script/parser.rb:536:in `loop'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/script/parser.rb:536:in `defn_arglist!'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/script/parser.rb:145:in `parse_mixin_definition_arglist'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:1134:in `sass_script'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:244:in `mixin_directive'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:234:in `special_directive'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:209:in `directive'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:696:in `block_child'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:689:in `block_contents'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:137:in `stylesheet'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:41:in `parse'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/engine.rb:414:in `_to_tree'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/engine.rb:321:in `to_tree'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:327:in `block in visit_import'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:88:in `block in with_import'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:88:in `with_import'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:329:in `block (2 levels) in visit_import'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:329:in `map'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:329:in `block in visit_import'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:88:in `block in with_import'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:88:in `with_import'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:320:in `block in watch'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Required argument $just must come before any optional arguments.\A         on line 20 of scss/utilities/_mixins.scss\A         from line 3 of scss/utilities/_index.scss\A         from line 2 of scss/style.scss\A \A 15: \A 16: //flexbox settings\A 17: \A 18: @mixin flexy($disp: flex,\A 19:             $dir: column,\A 20:             $just) {\A 21:     display: $disp;\A 22:     flex-direction: $dir;\A 23:     justify-content: $just;\A 24:         @content;\A 25: }"; }

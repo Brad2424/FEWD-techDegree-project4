@@ -5,9 +5,9 @@
 
 //--------flexbox container--------//
 .grid__row {
-@include flex;
+@include flexy($just: space-between);
     margin-bottom: 20px;
-        @include mq() {
+        @include mq(lg) {
             flex-direction: row;
         }
 }
@@ -19,7 +19,7 @@
 }
 
 .grid__col--7.centered {
-    @include mq() {
+    @include mq(lg) {
         max-width: 60%;
         margin: 0 auto;
     }
@@ -41,34 +41,34 @@
 
 //nav bar//
 .grid__col--9 {
-    @include mq() {
+    @include mq(lg) {
         display: flex;
     }
 }
 
 //button section//
 .grid__col--12 {
-    @include mq() {
+    @include mq(lg) {
         display: flex;
     }
 }
 
 .grid__col--12.theme__colors {
-    @include mq() {
+    @include mq(lg) {
         display: block;
     }
 }
 
 //typography section//
 .grid__col--8 {
-    @include mq() {
+    @include mq(lg) {
         flex: 2;
     }
 }
 
 //grid-flex in grid section
 .grid__col--7 {
-    @include mq() {
+    @include mq(lg) {
         flex: 1.5;
     }
 }

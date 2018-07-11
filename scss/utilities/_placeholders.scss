@@ -25,7 +25,7 @@
     text-transform: uppercase;
     margin-left: auto;
     margin-right: auto;
-        @include mq() {
+        @include mq(lg) {
             width: auto;
             padding: 10px 50px;
         }
@@ -36,7 +36,7 @@
     border-radius: $rounded;
     padding: 10px;
     margin: 10px 5px 0px 5px;
-        @include mq() {
+        @include mq(lg) {
             text-align: center;
         }
 }

@@ -1,15 +1,35 @@
 
 //media queries
-@mixin mq() {
-    @media (min-width: $breakpoint-lg) {
-        @content;
+
+@mixin mq($break) {
+    @if $break == null {
+        @error "`#{$break}` is not a valid breakpoint name.";
+    }
+
+    @else if $break == 'lg' {
+        @media (min-width: $breakpoint-lg) {
+            @content;
+        }
     }
 }
 
 //flexbox settings
-@mixin flex() {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+
+@mixin flexy($disp: flex,
+            $dir: column,
+            $just) {
+    display: $disp;
+    flex-direction: $dir;
+    justify-content: $just;
         @content;
+}
+
+//themes mixin
+
+@mixin themes($map) {
+    @each $btn-type, $color in $map {
+        &--#{$btn-type} {
+            background-color: $color;
+        }
+    }
 }

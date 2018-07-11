@@ -4,7 +4,7 @@
     padding: 10px 0;
     width: 100%;
     text-align: center;
-        @include mq() {
+        @include mq(lg) {
             display: inline-block;
             width: fit-content;
             margin: 0 10px;
@@ -17,7 +17,7 @@ a {
 }
 
 .grid__col--3 {
-    @include mq() {
+    @include mq(lg) {
         .img--logo {
             margin-left: 30px;
         }
