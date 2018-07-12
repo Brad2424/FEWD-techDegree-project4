@@ -15,9 +15,9 @@
 
 //flexbox settings
 
-@mixin flexy($disp: flex,
-            $dir: column,
-            $just) {
+@mixin flexy($just,
+            $disp: flex,
+            $dir: column) {
     display: $disp;
     flex-direction: $dir;
     justify-content: $just;

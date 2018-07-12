@@ -8,7 +8,7 @@
 // }
 
 .btn {
-    @include thems($btn-color);
+    @include themes($btn-color);
 }
 
 .btn--default {
