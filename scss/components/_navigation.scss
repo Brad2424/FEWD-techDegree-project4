@@ -7,13 +7,12 @@
             color: $primary-color;
             text-decoration: none;
             display: block;
-            padding: 10px 0;
+            padding: 10px 5px;
             transition: background-color 0.2s, color 0.3s, transform 0.2s;
         }
         & a:hover {
             color: white;
             background-color: $tertiary-color;
-            transform: scale(1, 1.3);
             font-weight: 600;
         }
         @include mq(lg) {
