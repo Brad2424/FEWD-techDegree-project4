@@ -3,6 +3,11 @@
     margin: 20px auto;
 }
 
+// grid item colors //
+div.theme__colors {
+    @include gridThemes($grid-color);
+}
+
 //--------flexbox container--------//
 .grid__row {
 @include flexy($just: space-between);
@@ -10,6 +15,12 @@
         @include mq(lg) {
             flex-direction: row;
         }
+}
+
+@for $i from 1 through $g-col-count {
+    .grid__col--#{$i} {
+        flex: 1;
+     }
 }
 
 @for $i from 1 through $g-col-count {
@@ -25,20 +36,6 @@
     }
 }
 
-.grid__col--2,
-.grid__col--3,
-.grid__col--4,
-.grid__col--5,
-.grid__col--6,
-.grid__col--7,
-.grid__col--8,
-.grid__col--9,
-.grid__col--10,
-.grid__col--11,
-.grid__col--12 {
-    flex: 1;
-}
-
 //nav bar//
 .grid__col--9 {
     @include mq(lg) {
@@ -50,12 +47,9 @@
 .grid__col--12 {
     @include mq(lg) {
         display: flex;
-    }
-}
-
-.grid__col--12.theme__colors {
-    @include mq(lg) {
-        display: block;
+        &.theme__colors {
+            display: block;
+        }
     }
 }
 
@@ -71,34 +65,4 @@
     @include mq(lg) {
         flex: 1.5;
     }
-}
-
-// grid item colors //
-.theme__colors.grid__col--12 {
-    background-color: rgb(126, 230, 253);
-    border-color: rgb(126, 230, 253);
-}
-.theme__colors.grid__col--6 {
-    background-color: rgb(63, 171, 232);
-    border-color: rgb(63, 171, 232);
-}
-.theme__colors.grid__col--4 {
-    background-color: rgb(136, 230, 253);
-    border-color: rgb(136, 230, 253);
-}
-.theme__colors.grid__col--3 {
-    background-color: rgb(222, 178, 238);
-    border-color: rgb(222, 178, 238);
-}
-.theme__colors.grid__col--5 {
-    background-color: rgb(136, 212, 160);
-    border-color: rgb(136, 212, 160);
-}
-.theme__colors.grid__col--7 {
-    background-color: rgb(236, 159, 163);
-    border-color: rgb(236, 159, 163);
-}
-.theme__colors.grid__col--8 {
-    background-color: rgb(253, 159, 133);
-    border-color: rgb(253, 159, 133);
 }

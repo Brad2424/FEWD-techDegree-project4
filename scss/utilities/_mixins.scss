@@ -24,12 +24,22 @@
         @content;
 }
 
-//themes mixin
+//button themes mixin
 
-@mixin themes($map) {
-    @each $btn-type, $color in $map {
-        &--#{$btn-type} {
+@mixin buttonThemes($map) {
+    @each $type, $color in $map {
+        &.btn--#{$type} {
             background-color: $color;
+            border-color: $color;
+        }
+    }
+}
+
+@mixin gridThemes($map) {
+    @each $number, $color in $map {
+        &.grid__col--#{$number} {
+            background-color: $color;
+            border-color: $color;
         }
     }
 }

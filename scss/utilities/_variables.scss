@@ -15,10 +15,21 @@ $tertiary-color: rgb(88, 225, 193);
 //grid-col count
 $g-col-count: 12;
 
+//grid colors
+$grid-color: (
+    '12' : rgb(126, 230, 253),
+    '6'  : rgb(63, 171, 232),
+    '4'  : rgb(136, 230, 253),
+    '3'  : rgb(222, 178, 238),
+    '5'  : rgb(136, 212, 160),
+    '7'  : rgb(236, 159, 163),
+    '8'  : rgb(253, 159, 133),
+);
+
 //button colors
 $btn-color: (
     'success': adjust-hue($secondary-color, -55),
     'error': adjust-hue($secondary-color, 170),
     'warning': adjust-hue($secondary-color, -145),
     'info': adjust-hue($secondary-color, 80),
-)
+);
